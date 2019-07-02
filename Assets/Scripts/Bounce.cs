@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class Bounce : MonoBehaviour
 {
-    public float ForceUp = 500f;
+    public float forceUp = 500f;
+    public float forceRight = 100f; 
 
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Vector2 force = new Vector2(0f, ForceUp);
+        Vector2 force = new Vector2(forceRight, forceUp);
         collision.GetComponent<Rigidbody2D>().AddForce(force);
     }
 
