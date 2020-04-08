@@ -8,7 +8,7 @@ public class CreateFlags : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         Vector2 position = collision.contacts[0].point;
-        GameObject flag = Resources.Load("flag") as GameObject;
+        GameObject flag = Resources.Load("flow") as GameObject;
 
         Vector3 position3D = new Vector3(position.x, position.y, 0f);
 
