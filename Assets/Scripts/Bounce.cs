@@ -10,8 +10,8 @@ public class Bounce : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Vector2 force = new Vector2(forceRight, forceUp);
-        collision.GetComponent<Rigidbody2D>().AddForce(force);
+        Vector2 forceBounce = new Vector2(forceRight, forceUp);
+        collision.GetComponent<Rigidbody2D>().AddForce(forceBounce);
     }
 
 }
